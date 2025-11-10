@@ -1,0 +1,13 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "npm run test:unit && npm run test:integration",
+    "test:unit": "cross-env NODE_ENV=test jest --config=jest.unit.config.js --runInBand",
+    "test:integration": "cross-env NODE_ENV=test jest --config=jest.integration.config.js --runInBand",
+    "setup-test-db": "node tests/setupTestDbScript.js",
+    "coverage": "jest --coverage"
+  }
+}

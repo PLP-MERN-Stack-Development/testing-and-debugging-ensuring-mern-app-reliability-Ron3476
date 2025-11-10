@@ -1,0 +1,13 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "test:unit": "react-scripts test --watchAll=false",
+    "test:e2e": "cypress open",
+    "coverage": "react-scripts test --coverage --watchAll=false"
+  }
+}
